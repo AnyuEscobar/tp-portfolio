@@ -21,19 +21,21 @@
 
 <body>
   <!--Presentacion-->
-  <h1>¡Bienvenidos!</h1>
-  <section class="presentacion">
-    <p>Me llamo Maria de los Angeles pero todos me dicen Anyu. Tengo 28 años. Hace años que tenía muchas ganas de
-      estudiar programación, y finalmente este año se me dio. Estoy muy entusiasmada la verdad. Me encantaría que este
-      portfolio quede lindo visualmente así que vamos a
-      intentarlo. </p>
+  <div class="first">
+    <h1>¡Bienvenidos!</h1>
+    <section class="presentacion">
+      <p>Me llamo Maria de los Angeles pero todos me dicen Anyu. Tengo 28 años. Hace años que tenía muchas ganas de
+        estudiar programación, y finalmente este año se me dio. Estoy muy entusiasmada la verdad. Me encantaría que este
+        portfolio quede lindo visualmente así que vamos a
+        intentarlo. </p>
+  </div>
   </section>
   <!--Probando la segunda seccion-->
   <section>
-    <h2>Conocimientos</h2>
-
+    <div class="subtitulo">
+      <h2>Conocimientos</h2>
+    </div>
     <div class="knowledge">
-
       <div class="card">
         <h3>Estudios</h3>
         <p>Secundaria completa </p>
@@ -46,33 +48,59 @@
         <p>Inglés avanzado</p>
         <p>Frances principiante</p>
       </div>
-
     </div>
   </section>
   <!--cierre la segunda seccion-->
   <section class="pets">
-    <h2>Mis mascotas</h2>
-    <div class="pets-card">
-      <img src="./assets/olivia.jpg" alt="foto de olivia">
-      <p> Ella es Olivia, tiene 14 años.</p>
+    <div class="subtitulo">
+      <h2>Mis mascotas</h2>
     </div>
-    <div class="pets-card">
-      <img src="./assets/mishimishi.jpg" alt="foto de mishi">
-      <p>Ella es la MishiMishi, tiene 10.</p>
-    </div>
-    <div class="pets-card">
-      <img src="./assets/minimini.jpg" alt="foto de mini">
-      <p>Ella es la MiniMini, tiene 6.</p>
-    </div>
-    <div class="pets-card">
-      <img src="./assets/luna.jpg" alt="foto de luna">
-      <p>Y ella es Lunita, ya no está conmigo :(</p>
+    <div class="pets-grid">
+      <div class="pets-card">
+        <img src="./assets/olivia.jpg" alt="foto de olivia">
+        <p> Ella es Olivia, tiene 14 años.</p>
+      </div>
+      <div class="pets-card">
+        <img src="./assets/mishimishi.jpg" alt="foto de mishi">
+        <p>Ella es la MishiMishi, tiene 10.</p>
+      </div>
+      <div class="pets-card">
+        <img src="./assets/minimini.jpg" alt="foto de mini">
+        <p>Ella es la MiniMini, tiene 6.</p>
+      </div>
+      <div class="pets-card">
+        <img src="./assets/luna.jpg" alt="foto de luna">
+        <p>Y ella es Lunita, ya no está conmigo :(</p>
 
+      </div>
     </div>
   </section>
-  <!--tercera seccion-->
-  <h2> Mis redes</h2>
 
+
+  <!--tercera seccion-->
+  <div class="subtitulo">
+    <h2>Dejame tu consulta acá:</h2>
+  </div>
+  <section>
+    <form action="formulario">
+      <div>
+        <label for="nombre" required>Nombre</label>
+        <input type="text"> <br>
+        <label for="email">Email</label>
+        <input type="email"><br>
+        <label for="textarea">Tu mensaje:</label>
+        <input type="text" name="" id="">
+      </div>
+      <div class="btn">
+        <button class="btn-send">Enviar!</button>
+      </div>
+    </form>
+
+  </section>
+</body>
+<!--agrego un footer-->
+<footer>
+  <h2> Mis redes</h2>
   <section class="contact">
     <div>
       <div class="redes">
@@ -81,16 +109,6 @@
         <a href="http://">WhatsApp</a>
       </div>
   </section>
-  <!--cuarta seccion-->
-  <h2>Para mas información</h2>
-  <section class="formulario">
-    <form action="">
-      <input type="text"> Nombre
-      <input type="email">Email
-      <textarea name="" id="">Tu consulta</textarea>
-      <button>Enviar!</button>
-    </form>
-
-  </section>
+</footer>
 
 </html>
