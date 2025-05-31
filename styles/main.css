@@ -80,20 +80,45 @@ h2 {
   background-color: blue;
 }
 
-.card p {
+/*aca me quedaba mal el parrafo de las imagenes porque era muy grande asi que lo dejé comentado nada mas 
+/*.card p {
   padding: 5px;
   font-weight: 200;
   font-family: "lora";
   font-style: italic;
+}*/
+.pets {
+  width: 100vh;
+
 }
 
-.pets {
-  background-color: aquamarine;
-  display: grid;
-  grid-template-columns: auto minmax(500px 3fr);
+.pets-card {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 4fr));
+  gap: 10px;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: cadetblue;
+
 }
 
 .pets img {
-  width: 80px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* seccion de redes */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+
+.contact a {
+  padding: 10px 50px;
 
 }
