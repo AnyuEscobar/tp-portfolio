@@ -15,6 +15,11 @@ body {
 }
   */
 
+.container-fluid {
+  background-color: rgb(245, 209, 234);
+  font-family: "lora";
+}
+
 h1 {
   font-family: "lora";
   font-style: italic;
@@ -172,7 +177,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(103, 70, 70);
+  background-color: rgb(169, 156, 216);
   font-family: "lora";
   font-weight: bold;
   padding: 20px 10px;
@@ -181,11 +186,19 @@ form {
 
 button {
   padding: 20px 40px;
-  background-color: red;
+  background-color: rgb(158, 56, 80);
   color: white;
   border-radius: 14px;
   margin-left: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.69);
+  font-size: medium;
 
+}
+
+.btn :hover {
+  background-color: rgb(222, 132, 178);
+  color: black;
 }
 
 .btn {
@@ -209,4 +222,9 @@ button {
 .contact a {
   padding: 10px 50px;
 
+}
+
+.links :hover {
+  background-color: white;
+  color: crimson;
 }
