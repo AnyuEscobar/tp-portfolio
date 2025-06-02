@@ -184,6 +184,13 @@ form {
   margin: 20px;
 }
 
+#btn {}
+
+#btn :hover {
+  background-color: rgb(222, 132, 178);
+  color: black;
+}
+
 button {
   padding: 20px 40px;
   background-color: rgb(158, 56, 80);
@@ -193,20 +200,8 @@ button {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.69);
   font-size: medium;
-
 }
 
-.btn :hover {
-  background-color: rgb(222, 132, 178);
-  color: black;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
 
 /* seccion de footer */
 .contact {
