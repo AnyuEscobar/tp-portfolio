@@ -23,10 +23,10 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <!--NavBar Bootstrap-->
-<header class="position-fixed">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<header>
+  <nav class="position-fixed navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Inicio</a>
+      <a class="navbar-brand" href="#acerca-de-mi">Inicio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,13 +34,16 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Conocimientos</a>
+            <a class="nav-link active" aria-current="page" href="#conocimientos">Conocimientos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mascotas</a>
+            <a class="nav-link" href="#mascotas">Mascotas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#dudas">Dudas?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
         <span class="navbar-text">
@@ -53,17 +56,20 @@
 
 <body>
   <!--Presentacion-->
-  <div class="first">
-    <h1>¡Bienvenidos!</h1>
-    <section class="presentacion">
-      <p>Me llamo Maria de los Angeles pero todos me dicen Anyu. Tengo 28 años. Hace años que tenía muchas ganas de
-        estudiar programación, y finalmente este año se me dio. Estoy muy entusiasmada la verdad. Me encantaría que este
-        portfolio quede lindo visualmente así que vamos a
-        intentarlo. </p>
-  </div>
-  </section>
+  <main>
+    <div class="first">
+      <h1 id="acerca-de-mi">¡Bienvenidos!</h1>
+      <section class="presentacion">
+        <p>Me llamo Maria de los Angeles pero todos me dicen Anyu. Tengo 28 años. Hace años que tenía muchas ganas de
+          estudiar programación, y finalmente este año se me dio. Estoy muy entusiasmada la verdad. Me encantaría que
+          este
+          portfolio quede lindo visualmente así que vamos a
+          intentarlo. </p>
+    </div>
+    </section>
+  </main>
   <!--Probando la segunda seccion-->
-  <section>
+  <section id="conocimientos">
     <div class="subtitulo">
       <h2>Conocimientos</h2>
     </div>
@@ -84,7 +90,7 @@
   </section>
   <!--cierre la segunda seccion-->
 
-  <div class="subtitulo">
+  <div id="mascotas" class="subtitulo">
     <h2>Mis mascotas</h2>
   </div>
   <section class="pets">
@@ -139,7 +145,7 @@
   <div class="subtitulo">
     <h2>Dejame tu consulta acá:</h2>
   </div>
-  <section>
+  <section id="dudas">
     <form action="formulario">
       <div>
         <label for="nombre" required>Nombre</label>
@@ -162,15 +168,17 @@
 </body>
 <!--agrego un footer-->
 <footer>
-  <h2> Mis redes</h2>
-  <section class="contact">
-    <div>
-      <div class="redes">
-        <a href="https://github.com/AnyuEscobar/">Github</a>
-        <a href="http://">Email</a>
-        <a href="http://">WhatsApp</a>
-      </div>
-  </section>
+  <div id="contacto">
+    <h2> Mis redes</h2>
+    <section class="contact">
+      <div>
+        <div class="redes">
+          <a href="https://github.com/AnyuEscobar/">Github</a>
+          <a href="http://">Email</a>
+          <a href="http://">WhatsApp</a>
+        </div>
+    </section>
+  </div>
 </footer>
 
 </html>
