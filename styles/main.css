@@ -44,7 +44,7 @@ header nav {
 }
 
 body {
-  background-color: rgba(247, 218, 217, 1)
+  background-color: rgb(255, 255, 255)
 }
 
 
@@ -66,6 +66,47 @@ h2 {
   align-items: center;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+h4 {
+  font-family: "aleo";
+}
+
+.typing {
+  width: 24ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #9F8CFF;
+  font-family: monospace;
+  animation: typing 2s steps(22), blink 0.7s linear alternate infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 24ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 .presentacion {
 
   flex-direction: column;
@@ -75,7 +116,7 @@ h2 {
   margin: 10px;
   border: gray;
   border-radius: 20px;
-  background-color: rgba(231, 169, 178, 0.9);
+  background-color: rgba(216, 167, 177, 1);
   box-shadow: -1px 11px 36px 6px rgba(107, 88, 125, 0.75);
 }
 
@@ -94,7 +135,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax (400px))
 }*/
 .knowledge {
-  background-color: rgb(210, 195, 231);
+  background-color: rgba (247, 218, 217, 1);
   font-family: "lora";
   font-size: 15px;
   display: grid;
@@ -164,6 +205,12 @@ h2 {
 
 }
 
+.project-grid img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-names h4 {
   font-family: "aleo";
   display: flex;
@@ -174,7 +221,7 @@ h2 {
 .project-card {
   padding: 10px 10px;
   margin: 10px;
-  background-color: rgb(245, 188, 197);
+  background-color: rgba(243, 197, 204, 0.9);
 }
 
 .names {
@@ -197,7 +244,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(169, 156, 216);
+  background-color: rgba(168, 156, 200, 1);
   font-family: "lora";
   font-weight: bold;
   padding: 20px 10px;
@@ -222,25 +269,31 @@ button {
 }
 
 
-/* seccion de footer */
-.contact {
+
+#contacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-color: rgba(250, 218, 221, 1);
   height: 50px;
   cursor: pointer;
   padding: 10px 10px;
+  margin: 30px;
 }
 
-.contact a {
-  padding: 10px 50px;
 
+.redes :hover {
+  background-color: rgb(222, 132, 178);
+  color: black;
 }
 
-.links :hover {
-  background-color: white;
-  color: crimson;
+/* seccion de footer */
+footer {
+  background-color: rgba(216, 167, 177, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*Responsive Design*/
