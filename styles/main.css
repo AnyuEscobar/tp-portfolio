@@ -94,7 +94,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax (400px))
 }*/
 .knowledge {
-  background-color: rgba(247, 218, 217, 1);
+  background-color: rgb(210, 195, 231);
   font-family: "lora";
   font-size: 15px;
   display: grid;
@@ -105,7 +105,7 @@ h2 {
 }
 
 .conocim-card {
-  background-color: rgba(231, 169, 178, 0.9);
+  background-color: rgba(243, 197, 204, 0.9);
   border-radius: 13px;
   padding: 10px 10px;
   margin: 10px;
@@ -132,6 +132,7 @@ h2 {
   padding: 10px;
   margin: 15px;
 }
+
 
 /*aca me quedaba mal el parrafo de las imagenes porque era muy grande asi que lo dejé comentado nada mas 
 /*.card p {
