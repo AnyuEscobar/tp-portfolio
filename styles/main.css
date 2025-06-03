@@ -98,7 +98,7 @@ h2 {
   font-family: "lora";
   font-size: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 10px;
   padding: 10px 10px;
   margin: 10px;
@@ -135,49 +135,54 @@ h2 {
   font-style: italic;
 }*/
 
-.pets-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  gap: 3px;
 
-}
-
-.pets-card {
+/*
+.proyect-card {
   padding: 10px 10px;
   margin: 10px;
   background-color: rgb(245, 188, 197);
 
-}
-
-.pets img {
-  width: 130px;
-  background-color: red;
-}
-
-.pet-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}*/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 2fr));
+  gap: 3px;
 
 }
 
-.pets p {
+.project p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 20px 10px;
 
+
 }
 
-.pets-names h4 {
+.project-names h4 {
   font-family: "aleo";
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.pets {
+.project-card {
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: rgb(245, 188, 197);
+}
+
+.names {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+img {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin: 10px 50px;
 }
 
 /*inicio de tercera sección*/
@@ -229,4 +234,28 @@ button {
 .links :hover {
   background-color: white;
   color: crimson;
+}
+
+/*Responsive Design*/
+
+@media (max-width: 480px) {
+
+  #conocimientos {
+    font-size: 10px;
+    width: fit-content;
+  }
+
+
+  .project-grid {
+    width: 70%;
+  }
+
+  .contact {
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
 }
